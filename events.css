@@ -1,0 +1,122 @@
+.main{
+    background-color: #2d1719;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+.main{
+    background-color: #2d1719;
+}
+.teamhead{
+    text-align: center;
+    width: 100%;
+    font-family: 'Philosopher', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8vh;
+    padding-top: 4vh;
+    color: white;
+}
+.teamdesc{
+    width: 100%;
+    text-align: center;
+    padding-left: 12vh;
+    padding-right: 12vh;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+    height: fit-content;
+    font-family: 'Spectral', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vh;
+    line-height: 36px;
+    color: white;
+}
+.team{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    align-items: center;
+    padding-bottom: 10vh;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-bottom: 4vh;
+}
+.heading1{
+    display: flex;
+    align-items: center;
+}
+.heading2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.thead{
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-size: 24px;
+    cursor: pointer;
+}
+.thead:hover{
+    color:#734045;
+}
+.thead:active{
+    color: #734045;
+}
+.carda,.cardb,.cardc,.cardd,.carde,.cardf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card11,.card2,.card3,.card4,.card5{
+    background-color: #472828;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: 400px;
+    height: 700px;
+    margin: 10px;
+    border-radius: 50px;
+}
+.teamimg{
+    width: 400px;
+    height: 598px;
+    border-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.hide {
+    padding: 5px;
+    text-align: center;
+    transition: height 10s;
+}
+.button{
+    height: 35px;
+    width: 150px;
+    color: white;
+    margin-top: 10px;
+    font-family: 'Crimson Pro', serif;
+    font-size: 20px;
+    position: relative;
+    background: linear-gradient(94.76deg, #2d1719 -1.18%, #3d1f1f 100%);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 45px;
+    border: 0px;
+    cursor: pointer;
+}
+.fab{
+    padding: 1px;
+    color:white;
+}
+.fab:hover{
+    color:#734045;
+}
+@media screen and (max-width: 800px) {
+    .carda,.cardb,.cardc,.cardd,.carde,.cardf{
+        display: block;
+    }
+}
