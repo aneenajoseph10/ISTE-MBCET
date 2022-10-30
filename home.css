@@ -8,20 +8,22 @@
 html {
     scroll-behavior: smooth;
 }
-.topnav
-{
+
+.topnav {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
     z-index: 3;
     background-color: white;
 }
+
 .logotext {
     padding-left: 10px;
     padding-top: 2vh;
     font-family: 'Alegreya';
     color: rgb(26, 26, 26);
 }
+
 .navbar {
     background-color: transparent;
 }
@@ -66,9 +68,9 @@ html {
     padding-left: 64px;
     padding-top: 164px;
     position: relative;
-    background:#2d1719;
+    background: #2d1719;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
 .iste {
@@ -142,7 +144,8 @@ html {
     flex-direction: column;
     align-items: center;
 }
-.about::before {    
+
+.about::before {
     content: "";
     background: url('./Mar-Baselios-College-Campus-View-1.jpg');
     background-repeat: no-repeat;
@@ -154,6 +157,7 @@ html {
     left: 0px;
     opacity: 0.2;
 }
+
 .ahead {
     text-align: center;
     width: 100%;
@@ -179,16 +183,38 @@ html {
     color: #000000;
 }
 
-.aimg {
-    height: 40vh;
-    padding-top: 2vh;
-    padding-bottom: 1vh;
+.ab {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    padding-top: 7px;
+    position: relative;
 }
 
-ul.b {
-    list-style-type: square;
-    padding-left: 12vh;
-    padding-right: 12vh;
+.ab1 {
+    height: 25vw;
+    text-align: center;
+    padding: 7px;
+    width: 30%;
+    background-color: rgb(71, 40, 40, 0.27);
+}
+
+.abim {
+    height: fit-content;
+    width: 100%;
+}
+
+.descript {
+    font-size: 18px;
+    color: black;
+    line-height: normal;
+    padding-top: 5px;
+    padding-bottom: 2px;
 }
 
 .advantage {
@@ -198,8 +224,8 @@ ul.b {
     flex-direction: column;
     align-items: center;
 }
-.advhead
-{
+
+.advhead {
     color: white;
     text-align: center;
     width: 100%;
@@ -209,22 +235,26 @@ ul.b {
     font-size: 8vh;
     padding-top: 4vh;
 }
-.advcontent{
+
+.advcontent {
     background-color: #2d1719;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-.container{
+
+.container {
     padding: 2rem 5%;
 }
-.flex{
+
+.flex {
     display: flex;
     flex-wrap: wrap;
-    gap:1.5rem;
+    gap: 1.5rem;
 }
-.card1{
+
+.card1 {
     background-color: #472828;
     padding: 15px 20px;
     flex: 1 0 20em;
@@ -233,8 +263,9 @@ ul.b {
     display: flex;
     align-items: center;
 }
-.boxcontent{
-    color:white;
+
+.boxcontent {
+    color: white;
     font-family: 'Spectral', serif;
     font-style: normal;
     font-size: 3vh;
@@ -242,13 +273,15 @@ ul.b {
     padding: 1vh;
     text-align: center;
 }
+
 .events {
     width: 100%;
     position: relative;
     height: fit-content;
     padding-bottom: 4vh;
 }
-.events::before {    
+
+.events::before {
     content: "";
     background: url('./Mar-Baselios-College-Campus-View-1.jpg');
     background-repeat: no-repeat;
@@ -260,6 +293,7 @@ ul.b {
     left: 0px;
     opacity: 0.3;
 }
+
 .ehead {
     position: relative;
     text-align: center;
@@ -295,9 +329,9 @@ ul.b {
     padding-top: 2vh;
     padding-left: 12vh;
     padding-right: 12vh;
-    
-    flex:1 1 20em;
-    gap:1.5rem;
+
+    flex: 1 1 20em;
+    gap: 1.5rem;
 }
 
 .box1,
@@ -345,7 +379,8 @@ ul.b {
 
 .footer {
     background-color: black;
-    color:white;
+    position: relative;
+    color: white;
     text-align: center;
     font-family: 'Gentium Book Plus', serif;
     padding-bottom: 5vh;
@@ -354,18 +389,21 @@ ul.b {
     justify-content: space-between;
     align-items: center;
 }
-.foot1{
+
+.foot1 {
     padding-left: 5vh;
     text-align: left;
     font-weight: lighter;
 }
-.foot2{
+
+.foot2 {
     padding-right: 5vh;
     text-align: right;
 }
+
 .footer2 {
     background-color: black;
-    color:white;
+    color: white;
     font-family: 'Gentium Book Plus', serif;
     padding-bottom: 2vh;
     padding-top: 2vh;
@@ -373,25 +411,30 @@ ul.b {
     font-weight: bold;
     text-align: center;
 }
-.log{
+
+.log {
     text-align: center;
     display: block;
 }
-.social{
+
+.social {
     padding-top: 12vh;
     padding-bottom: 2vh;
 }
-.socicon{
+
+.socicon {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.fab{
+
+.fab {
     padding: 1px;
-    color:white;
+    color: white;
 }
-.fab:hover{
-    color:#734045;
+
+.fab:hover {
+    color: #734045;
 }
 
 @media screen and (max-width: 800px) {
@@ -449,6 +492,19 @@ ul.b {
         line-height: 7vw;
         font-size: 4vw;
     }
+
+    .ab {
+        flex-direction: column;
+        gap: 1em;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .ab1 {
+        width: 90%;
+        height: fit-content;
+    }
+
     .advantage {
         height: fit-content;
         width: 100%;
@@ -528,22 +584,25 @@ ul.b {
         font-size: 4vw;
         padding-top: 4vh;
     }
+
     .footer {
         background-color: #2d1719;
-        color:white;
+        color: white;
         text-align: center;
         font-family: 'Gentium Book Plus', serif;
         padding-bottom: 5vh;
         padding-top: 5vh;
         font-weight: bold;
-        display:block;
+        display: block;
     }
-    .foot1{
-        text-align:center;
+
+    .foot1 {
+        text-align: center;
         padding: 0;
         padding-bottom: 2vh;
     }
-    .foot2{
+
+    .foot2 {
         text-align: center;
         padding: 0;
     }
