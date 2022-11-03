@@ -1,0 +1,145 @@
+*
+    {
+      margin: 0px;
+      padding: 0px;
+      margin-bottom: 1.5rem;
+      box-sizing : border-box;
+      text-decoration: none;
+  }
+  
+  html {
+      scroll-behavior: smooth;
+  }
+  .topnav
+  {
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+      z-index: 3;
+      background-color: white;
+  }
+  .logotext {
+      padding-left: 10px;
+      padding-top: 2vh;
+      font-family: 'Alegreya';
+      color: rgb(26, 26, 26);
+  }
+  .navbar {
+      background-color: transparent;
+      
+  }
+  .fcc-btn {
+    color: #2d1719;
+    font-size: 22px;
+    padding-left: 65px;
+    
+  }
+  
+  .navbar ul {
+      padding: 0px 30px 0px 0px;
+  }
+  
+  .navbar ul li a {
+      color: black;
+      margin-left: 0px;
+      text-transform: uppercase;
+      font-size: 12px;
+  }
+  
+  
+  .navbar ul li a .fas {
+      padding-right:0px;
+      padding-left: 0px;
+  }
+  
+  .navbar ul li a:hover {
+      color: #734045;
+  }
+  
+  .navbar ul li.active>a {
+      color: #734045;
+      font-weight: bold;
+      font-size: 12px;
+      border-left: 3px solid #4f4f51;
+      border-radius: 40px;
+  }
+  
+  .iconStyle {
+      color: #2d1719;
+  }
+  
+  .background {
+      width: 100%;
+      height: 92vh;
+      display: flex;
+      flex-direction: column;
+      padding-left: 64px;
+      padding-top: 164px;
+      position: relative;
+      background:#2d1719;
+      background-repeat: no-repeat;
+      background-size:cover;
+  }
+  .footer {
+    background-color: black;
+    position: relative;
+    color:white;
+    text-align: center;
+    font-family: 'Gentium Book Plus', serif;
+    padding-bottom: 5vh;
+    padding-top: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot1{
+    padding-left: 0vh;
+    text-align: left;
+    font-weight: lighter;
+}
+.foot2{
+    padding-right: 0vh;
+    text-align: right;
+}
+.footer2 {
+    background-color: white;
+    color:black;
+    font-family: 'Gentium Book Plus', serif;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    padding-left: 2vh;
+    font-weight: bold;
+    text-align: center;
+}
+.log{
+    text-align: center;
+    display: block;
+}
+.social{
+    padding-top: 12vh;
+    padding-bottom: 2vh;
+}
+.socicon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fab{
+    padding: 1px;
+    color:white;
+}
+.fab:hover{
+    color:#734045;
+}
+
+@media screen and (max-width: 800px) {
+    .logotext {
+        display: none;
+    }
+
+    .nav {
+        width: 100%;
+        height: 90px;}
+        .p{
+            text-align: center;
+        }
