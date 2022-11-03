@@ -81,10 +81,11 @@ html {
 }
 
 .desc {
-    font-size: 24px;
+    font-size: 21px;
     font-family: 'Spectral', serif;
     padding-right: 64px;
     padding-top: 20px;
+    font-weight: 100;
     padding-bottom: 20px;
     color: white;
 }
@@ -102,6 +103,31 @@ html {
     border-radius: 45px;
     border: 0px;
     cursor: pointer;
+}
+
+.feedback {
+    background-color : #2d1719;
+    font-family: 'Crimson Pro', serif;
+    color: white;
+    height: 50px;
+    width: 150px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    z-index: 10;
+}
+.feedback:hover{
+    background-color: #734045;
+}
+  
+#mybutton {
+    position: fixed;
+    bottom: 50%;
+    z-index: 10;
+    right: 0px;
+    font-size: 20px;
 }
 
 .sep {
@@ -470,6 +496,14 @@ html {
         width: 50vw;
         font-size: 5vw;
         border-radius: 45px;
+    }
+
+    .feedback{
+        border-radius: 4px;
+    }
+    
+    #mybutton {
+        bottom: 0%;
     }
 
     .about {
