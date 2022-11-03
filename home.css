@@ -68,7 +68,7 @@ html {
     padding-left: 64px;
     padding-top: 164px;
     position: relative;
-    background:#2d1719;
+    background: url('./homeimg.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
