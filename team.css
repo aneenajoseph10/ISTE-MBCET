@@ -1,0 +1,208 @@
+.main{
+    background-color: #2d1719;
+}
+.teamhead{
+    text-align: center;
+    width: 100%;
+    font-family: 'Philosopher', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8vh;
+    padding-top: 4vh;
+    color: white;
+}
+.teamdesc{
+    width: 100%;
+    text-align: center;
+    padding-left: 12vh;
+    padding-right: 12vh;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+    height: fit-content;
+    font-family: 'Spectral', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.7vh;
+    line-height: 36px;
+    color: white;
+}
+.team{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    align-items: center;
+    padding-bottom: 10vh;
+}
+.carda,.cardb,.cardc,.cardd,.carde,.cardf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1.5s ease;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0.3;;
+    }
+
+    100% {
+        opacity: 1;;
+    }
+}
+.cardah,.cardbh,.cardch,.carddh,.cardeh,.cardfh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1.3s all ease;
+}
+.cardah.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+.cardbh.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+.cardch.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+.carddh.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+.cardeh.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+.cardfh.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card11,.card2,.card3,.card4,.card5{
+    background-color: #734045;
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    border-radius: 50px;
+}
+.teamimg{
+    object-fit: cover;
+    height:180px;
+    width: 180px;
+    border-radius: 50px;
+}
+img:hover {
+    opacity: 0.2;
+    transition:opacity 1s;
+  }
+.hide {
+    display: none;
+    margin-top: -120px;
+    padding: 5px;
+    text-align: center;
+}
+.card11:hover .hide {
+    display: block;
+    color: white;
+}
+.card2:hover .hide {
+    display: block;
+    color: white;
+}
+.card3:hover .hide {
+    display: block;
+    color: white;
+}
+.card4:hover .hide {
+    display: block;
+    color: white;
+}
+.card5:hover .hide {
+    display: block;
+    color: white;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-bottom: 4vh;
+}
+.heading1{
+    display: flex;
+    align-items: center;
+}
+.heading2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.thead{
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-size: 24px;
+    cursor: pointer;
+}
+.thead:hover{
+    color:#734045;
+}
+.fab{
+    padding: 1px;
+    color:white;
+}
+.fab:hover{
+    color:#734045;
+}
+ @media screen and (max-width: 800px) {
+    .main{
+        height: fit-content;
+        width: fit-content;
+    }
+    .teamdesc{
+        font-size: 16px;
+        line-height: normal;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .carda,.cardb,.cardc,.cardd,.carde,.cardf{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cardah,.cardbh,.cardch,.carddh,.cardeh,.cardfh{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card11,.card2,.card3,.card4,.card5{
+        background-color:#734045;
+        width: 180px;
+        height: 180px;
+        margin: 10px;
+        border-radius: 50px;
+    }
+    .teamimg{
+        object-fit: cover;
+        height:180px;
+        width: 180px;
+        border-radius: 50px;
+    }
+    .heading1{
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    .heading2{
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    .thead{
+        font-size: 14px;
+        cursor: pointer;
+        padding-bottom: 0.5vh;
+    }
+} 
