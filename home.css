@@ -1,0 +1,750 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.topnav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 3;
+    background-color: white;
+}
+
+.logotext {
+    padding-left: 10px;
+    padding-top: 2vh;
+    font-family: 'Alegreya';
+    color: rgb(26, 26, 26);
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar ul {
+    padding: 0px 30px 0px 0px;
+}
+
+.navbar ul li a {
+    color: black;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.navbar ul li a .fas {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.navbar ul li a:hover {
+    color: #734045;
+}
+
+.navbar ul li.active>a {
+    color: #734045;
+    font-weight: bold;
+    font-size: 12px;
+    border-left: 3px solid #4f4f51;
+    border-radius: 40px;
+}
+
+.iconStyle {
+    color: #2d1719;
+}
+
+.background {
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 64px;
+    padding-top: 164px;
+    position: relative;
+    background: url('./homeimg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.iste {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 64px;
+    color: white;
+    font-weight: 700;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+.desc {
+    font-size: 21px;
+    font-family: 'Spectral', serif;
+    padding-right: 64px;
+    padding-top: 20px;
+    font-weight: 100;
+    padding-bottom: 20px;
+    color: white;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+.discover {
+    height: 50px;
+    width: 220px;
+    color: white;
+    font-weight: 900;
+    font-family: 'Crimson Pro', serif;
+    font-size: 20px;
+    position: relative;
+    background: linear-gradient(94.76deg, #2d1719 -1.18%, #3d1f1f 100%);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 45px;
+    border: 0px;
+    cursor: pointer;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+.feedback {
+    background-color: #2d1719;
+    font-family: 'Crimson Pro', serif;
+    color: white;
+    height: 50px;
+    width: 150px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    z-index: 10;
+    transition: 0.5s;
+}
+
+.feedback:hover {
+    background-color: #734045;
+}
+
+#mybutton {
+    position: fixed;
+    bottom: 50%;
+    z-index: 10;
+    right: 0px;
+    font-size: 20px;
+}
+
+.sep {
+    background-color: #472828;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    left: 0px;
+    z-index: 2;
+}
+
+#mainmodal {
+    font-family: 'Gentium Book Plus', serif;
+    width: 100%;
+    text-align: center;
+}
+
+.modalconent {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #472828;
+    width: 100%;
+}
+
+.marquee {
+    color: white;
+    letter-spacing: 2px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.about {
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about::before {
+    content: "";
+    background: url('./Mar-Baselios-College-Campus-View-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+}
+
+.abouts {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.abouts.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.ahead {
+    text-align: center;
+    width: 100%;
+    font-family: 'Philosopher', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8vh;
+    padding-top: 4vh;
+    color: #2d1719;
+}
+
+.acontent {
+    width: 100%;
+    padding-left: 12vh;
+    padding-right: 12vh;
+    padding-top: 2vh;
+    height: fit-content;
+    font-family: 'Spectral', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vh;
+    line-height: 36px;
+    color: #000000;
+}
+
+.ab {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1em;
+    padding-top: 7px;
+    position: relative;
+}
+
+.ab1 {
+    height: 25vw;
+    text-align: center;
+    padding: 7px;
+    width: 30%;
+    background-color: rgb(71, 40, 40, 0.27);
+}
+
+.abim {
+    height: fit-content;
+    width: 100%;
+}
+
+.descript {
+    font-size: 18px;
+    color: black;
+    line-height: normal;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+
+.advantage {
+    height: fit-content;
+    background: #2d1719;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages {
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.advantages.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.advhead {
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-family: 'Philosopher', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8vh;
+    padding-top: 4vh;
+}
+
+.advcontent {
+    background-color: #2d1719;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    padding: 2rem 5%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.card1 {
+    background-color: #472828;
+    padding: 15px 20px;
+    flex: 1 0 20em;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 1vw;
+    display: flex;
+    align-items: center;
+}
+
+.boxcontent {
+    color: white;
+    font-family: 'Spectral', serif;
+    font-style: normal;
+    font-size: 2.7vh;
+    line-height: 4vh;
+    padding: 1vh;
+    text-align: center;
+}
+
+.events {
+    width: 100%;
+    position: relative;
+    height: fit-content;
+    padding-bottom: 4vh;
+}
+
+.event {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.event.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.events::before {
+    content: "";
+    background: url('./Mar-Baselios-College-Campus-View-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+}
+
+.ehead {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-family: 'Philosopher', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8vh;
+    padding-top: 2vw;
+    color: #2d1719;
+    opacity: 1;
+    z-index: 2;
+}
+
+.econtent {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-family: 'Spectral', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3vh;
+    padding-top: 2vh;
+    line-height: 36px;
+    color: #000000;
+}
+
+.ebox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2vh;
+    padding-left: 12vh;
+    padding-right: 12vh;
+
+    flex: 1 1 20em;
+    gap: 1.5rem;
+}
+
+.box1,
+.box2,
+.box3 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28vw;
+    height: 100%;
+    background: linear-gradient(0deg, #2d1719 0%, #3d1f1f 78%);
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 1vw;
+    padding: 4vw;
+}
+
+.icon {
+    height: 12vh;
+    padding-top: 2vh;
+}
+
+.boxhead {
+    width: fit-content;
+    text-align: center;
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-size: 5vh;
+    line-height: 48px;
+    color: #FFFFFF;
+    padding-top: 4vh;
+}
+
+.boxcont {
+    width: fit-content;
+    font-family: 'Spectral', serif;
+    font-style: normal;
+    font-size: 3vh;
+    line-height: 4vh;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 4vh;
+}
+
+.footer {
+    background-color: black;
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: 'Gentium Book Plus', serif;
+    padding-bottom: 5vh;
+    padding-top: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot1 {
+    padding-left: 5vh;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.foot2 {
+    padding-right: 5vh;
+    text-align: right;
+}
+
+.footer2 {
+    background-color: black;
+    color: white;
+    font-family: 'Gentium Book Plus', serif;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    padding-left: 5vh;
+    font-weight: bold;
+    text-align: center;
+}
+
+.log {
+    text-align: center;
+    display: block;
+}
+
+.social {
+    padding-top: 12vh;
+    padding-bottom: 2vh;
+}
+
+.socicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fab {
+    padding: 1px;
+    color: white;
+    transition: 0.5s;
+}
+
+.fab:hover {
+    color: #734045;
+}
+
+@media screen and (max-width: 800px) {
+    .logotext {
+        display: none;
+    }
+
+    .nav {
+        width: 100%;
+        height: 90px;
+    }
+
+    .background {
+        width: 100%;
+        height: fit-content;
+        padding-left: 6vw;
+        padding-top: 30vw;
+        padding-bottom: 30vw;
+    }
+
+    .iste {
+        font-size: 15vw;
+    }
+
+    .desc {
+        font-size: 4vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .discover {
+        height: 12vw;
+        width: 50vw;
+        font-size: 5vw;
+        border-radius: 45px;
+    }
+
+    .feedback {
+        border-radius: 4px;
+    }
+
+    #mybutton {
+        bottom: 0%;
+    }
+
+    .about {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .ahead {
+        width: 100%;
+        font-size: 12vw;
+        padding-top: 4vh;
+    }
+
+    .acontent {
+        width: 100%;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-top: 2vh;
+        height: fit-content;
+        line-height: 7vw;
+        font-size: 4vw;
+    }
+
+    .ab {
+        flex-direction: column;
+        gap: 1em;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .ab1 {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .advantage {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .advhead {
+        width: 100%;
+        font-size: 12vw;
+        padding-top: 4vh;
+    }
+
+    .advcontent {
+        display: block;
+    }
+
+    .boxcontent{
+        font-size: 17px;
+        line-height: normal;
+    }
+
+    .aimg {
+        height: 40vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    ul.b {
+        padding-left: 6vw;
+        padding-right: 4vw;
+    }
+
+    .events {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .ehead {
+        width: 100%;
+        font-size: 12vw;
+    }
+
+    .econtent {
+        width: 100%;
+        font-size: 4vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-top: 2vh;
+        line-height: 7vw;
+    }
+
+    .ebox {
+        width: 100%;
+        padding-top: 2vh;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        width: 100%;
+        height: fit-content;
+        border-radius: 15px;
+        padding: 4vw;
+        margin-bottom: 2vw;
+    }
+
+    .icon {
+        height: 12vh;
+        padding-top: 2vh;
+    }
+
+    .boxhead {
+        font-size: 8vw;
+        line-height: 8vw;
+        padding-top: 4vh;
+    }
+
+    .boxcont {
+        font-size: 4vw;
+        padding-top: 4vh;
+        line-height: normal;
+    }
+
+    .footer {
+        background-color: #2d1719;
+        color: white;
+        text-align: center;
+        font-family: 'Gentium Book Plus', serif;
+        padding-bottom: 5vh;
+        padding-top: 5vh;
+        font-weight: bold;
+        display: block;
+    }
+
+    .foot1 {
+        text-align: center;
+        padding: 0;
+        padding-bottom: 2vh;
+    }
+
+    .foot2 {
+        text-align: center;
+        padding: 0;
+    }
+}
