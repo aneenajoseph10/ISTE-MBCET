@@ -1,7 +1,7 @@
 .main{
     background-color: #2d1719;
     color: white;
-    height: 100%;
+    height: fit-content;
     width: 100%;
 }
 .teamhead{
@@ -136,6 +136,9 @@
 .fab:hover{
     color:#734045;
 }
+.starclass{
+    height: fit-content;
+}
 @media screen and (max-width: 800px) {
     .teamdesc{
         font-size: 16px;
@@ -145,5 +148,8 @@
     }
     .carda,.cardb,.cardc,.cardd,.carde,.cardf{
         display: block;
+    }
+    .main{
+        height: 100%;
     }
 }
