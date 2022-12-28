@@ -1,4 +1,4 @@
-const c=document.getElementById('teamhide');
+// const c=document.getElementById('teamhide');
 const a1=document.getElementById('team1');
 const a2=document.getElementById('team2');
 const a3=document.getElementById('team3');
@@ -16,8 +16,8 @@ const b6=document.getElementById('th6');
 const b7=document.getElementById('th7');
 const b8=document.getElementById('th8');
 
-c.style.display="block";
-a1.style.display="none";
+// c.style.display="block";
+a1.style.display="block";
 a2.style.display="none";
 a3.style.display="none";
 a4.style.display="none";
@@ -25,7 +25,7 @@ a5.style.display="none";
 a6.style.display="none";
 a7.style.display="none";
 a8.style.display="none";
-b1.style.color="white";
+b1.style.color="#734045";
 b2.style.color="white";
 b3.style.color="white";
 b4.style.color="white";
