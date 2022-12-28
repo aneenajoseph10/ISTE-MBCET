@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.developers{
+    background: linear-gradient(180deg, rgba(30,18,20,1) 0%, rgba(65,36,34,1) 40%, rgba(29,15,18,1) 95%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.dhead{
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #734045,
+    1px 3px 1px #734045,
+    1px 4px 1px #734045;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8vh;
+    padding-top: 1.8vw;
+}
+
+.dev1{
+    font-family: 'Spectral', serif;
+    display:inline-block;
+    min-width: 100%;
+    height: fit-content;
+    font-size: 35px;
+    color: white;
+    font-weight: 800;
+    padding: 25px;
+    background-image: linear-gradient(to left,transparent,transparent 50%,#734045 50%,#734045);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .4s ease-in;
+    cursor: pointer;
+    border: 2px solid;
+}
+
+.dev1:hover{
+    background-position: 0 0;
+    color: white;
+}
