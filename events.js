@@ -6,10 +6,10 @@ const b2=document.getElementById('th2');
 const b3=document.getElementById('th3');
 const b4=document.getElementById('th4');
 
-a1.style.display="block";
+a1.style.display="none";
 a2.style.display="none";
-a3.style.display="none";
-b1.style.color="#734045";
+a3.style.display="block";
+b1.style.color="white";
 b2.style.color="white";
 b3.style.color="white";
 b4.style.color="white";
@@ -48,5 +48,5 @@ b4.addEventListener('click',()=>{
     b1.style.color="white";
     b2.style.color="white";
     b3.style.color="white";
-    b4.style.color="#734045";
+    b4.style.color="pink";
 });
